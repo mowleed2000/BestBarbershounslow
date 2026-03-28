@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Best Barbers Hounslow | Hounslow's Best Barbers</title>
+<meta content="Experience the cultural vault of Hounslow at Best Barbers LTD. Premium fades, traditional shaves, and unisex cuts in the heart of TW3. Walk-ins welcome." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Barlow+Condensed:wght@700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#0D1A0F",
+              "primary-green": "#1B5E2A",
+              "brand-red": "#C62828",
+              "brand-gold": "#D4A017",
+              "brand-cream": "#FFF8E7",
+            },
+            fontFamily: {
+              "headline": ["Bebas Neue", "cursive"],
+              "body": ["DM Sans", "sans-serif"],
+              "label": ["Barlow Condensed", "sans-serif"],
+              "display": ["Playfair Display", "serif"],
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        html { scroll-behavior: smooth; }
+        body {
+            cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='8' fill='%23D4A017' fill-opacity='0.4'/%3E%3Ccircle cx='12' cy='12' r='3' fill='%23D4A017'/%3E%3C/svg%3E"), auto;
+            background-color: #0D1A0F;
+        }
+        .noise-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        .marquee-content {
+            display: flex; white-space: nowrap; animation: marquee 30s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .barber-pole {
+            background: repeating-linear-gradient(45deg, #FFF8E7, #FFF8E7 20px, #C62828 20px, #C62828 40px, #1B5E2A 40px, #1B5E2A 60px);
+            background-size: 200% 200%;
+            animation: poleMove 4s linear infinite;
+        }
+        @keyframes poleMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+        .clip-custom {
+            clip-path: polygon(0 0, 92% 0, 100% 8%, 100% 100%, 8% 100%, 0% 92%);
+        }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        @keyframes scrollHint {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+        .scroll-indicator { animation: scrollHint 2s infinite; }
+        .product-card {
+            flex: 0 0 calc(20% - 1.5rem);
+            min-width: 240px;
+        }
+        @media (max-width: 1280px) {
+            .product-card { flex: 0 0 calc(25% - 1.5rem); }
+        }
+        @media (max-width: 1024px) {
+            .product-card { flex: 0 0 calc(33.333% - 1.5rem); }
+        }
+        @media (max-width: 768px) {
+            .product-card { flex: 0 0 calc(50% - 1.5rem); }
+        }
+        @media (max-width: 480px) {
+            .product-card { flex: 0 0 100%; }
+        }
+    </style>
+</head>
+<body class="font-body text-brand-cream selection:bg-brand-gold selection:text-background">
+<div class="noise-overlay"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-brand-gold/20">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<a class="text-3xl font-black uppercase tracking-tighter text-brand-cream font-headline" href="#">
+                Best Barbers
+            </a>
+<div class="hidden md:flex gap-8 items-center font-label font-bold uppercase tracking-wider text-lg">
+<a class="hover:text-brand-gold transition-colors" href="#about">About</a>
+<a class="hover:text-brand-gold transition-colors" href="#services">Services</a>
+<a class="hover:text-brand-gold transition-colors" href="#products">Products</a>
+<a class="hover:text-brand-gold transition-colors" href="#reviews">Reviews</a>
+<a class="hover:text-brand-gold transition-colors" href="#find-us">Find Us</a>
+</div>
+<a class="bg-brand-red text-brand-cream px-6 py-2 font-label font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-all" href="tel:02038599703">
+                Call Now
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Best Barbers interior" class="w-full h-full object-cover" src="assets/hero-chairs.jpg"/>
+<div class="absolute inset-0" style="background-color: rgba(13, 26, 15, 0.45);"></div>
+</div>
+<!-- Animated Barber Pole -->
+<div class="absolute right-0 top-0 h-full w-4 md:w-6 barber-pole z-10 opacity-80"></div>
+<div class="relative z-20 max-w-7xl mx-auto px-6 w-full mt-16">
+<div class="max-w-4xl space-y-6 reveal active">
+<h1 class="text-7xl md:text-9xl font-headline text-brand-cream leading-[0.85] uppercase drop-shadow-2xl">
+                    Hounslow's <span class="text-brand-gold" style="text-shadow: 2px 4px 10px rgba(0,0,0,0.8);">Best Barbers</span>
+</h1>
+<p class="text-2xl md:text-3xl font-display italic text-brand-cream/80 max-w-2xl">
+                    Preserving the craft, defining the culture. 
+                </p>
+<div class="flex pt-10">
+<a class="bg-brand-red text-brand-cream px-12 py-6 font-label font-bold text-3xl uppercase tracking-tighter flex items-center gap-4 hover:brightness-110 transition-all shadow-2xl" href="tel:02038599703">
+<span class="material-symbols-outlined text-4xl">call</span>
+                        020 3859 9703
+                    </a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 scroll-indicator">
+<span class="material-symbols-outlined text-4xl text-brand-gold">expand_more</span>
+</div>
+</section>
+<!-- Marquee -->
+<div class="bg-primary-green py-6 overflow-hidden border-y border-brand-gold/30">
+<div class="marquee-content gap-12 items-center">
+<div class="flex gap-12 items-center text-brand-gold font-headline text-4xl shrink-0">
+<span>✂ Haircuts</span> <span class="text-brand-cream/30">✦</span>
+<span>Fades</span> <span class="text-brand-cream/30">✦</span>
+<span>Beard Trims</span> <span class="text-brand-cream/30">✦</span>
+<span>Unisex</span> <span class="text-brand-cream/30">✦</span>
+<span>Walk-ins Welcome</span> <span class="text-brand-cream/30">✦</span>
+</div>
+<div class="flex gap-12 items-center text-brand-gold font-headline text-4xl shrink-0">
+<span>✂ Haircuts</span> <span class="text-brand-cream/30">✦</span>
+<span>Fades</span> <span class="text-brand-cream/30">✦</span>
+<span>Beard Trims</span> <span class="text-brand-cream/30">✦</span>
+<span>Unisex</span> <span class="text-brand-cream/30">✦</span>
+<span>Walk-ins Welcome</span> <span class="text-brand-cream/30">✦</span>
+</div>
+</div>
+</div>
+<!-- About Section -->
+<section class="py-32 relative overflow-hidden bg-background" id="about">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+<div class="space-y-8 relative z-10 reveal">
+<div class="space-y-4">
+<h2 class="text-66xl font-headline text-brand-gold uppercase leading-none">Our Story</h2>
+<p class="text-4xl font-display text-brand-cream italic">A Tradition of Precision.</p>
+<p class="text-lg text-brand-cream/70 max-w-lg leading-relaxed font-body">
+                        Located in the heart of Hounslow, we aren't just a barbershop. We are a cultural vault where community meets craftsmanship. Our barbers are artists dedicated to the sharpest fades and the most relaxing traditional shaves.
+                    </p>
+</div>
+<div class="grid grid-cols-3 gap-8 border-l-4 border-primary-green pl-8">
+<div>
+<p class="text-5xl font-headline text-brand-gold">106</p>
+<p class="text-sm font-label font-bold uppercase tracking-widest text-brand-cream/50">Reviews</p>
+</div>
+<div>
+<p class="text-5xl font-headline text-brand-gold">4.2★</p>
+<p class="text-sm font-label font-bold uppercase tracking-widest text-brand-cream/50">Rating</p>
+</div>
+<div>
+<p class="text-5xl font-headline text-brand-gold">TW3</p>
+<p class="text-sm font-label font-bold uppercase tracking-widest text-brand-cream/50">Location</p>
+</div>
+</div>
+</div>
+<div class="relative group reveal">
+<!-- Gold Corner Brackets -->
+<div class="absolute -top-6 -left-6 w-16 h-16 border-t-4 border-l-4 border-brand-gold z-20"></div>
+<div class="absolute -bottom-6 -right-6 w-16 h-16 border-b-4 border-r-4 border-brand-gold z-20"></div>
+<div class="clip-custom bg-primary-green p-1">
+<img alt="Best Barbers Cultural Wall" class="clip-custom w-full h-[600px] object-cover contrast-110 group-hover:contrast-125 transition-all duration-700" src="assets/culture.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-background/50 border-y border-brand-gold/10" id="services">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-20 text-center reveal">
+<h2 class="text-7xl font-headline text-brand-cream uppercase tracking-tight">Premium Services</h2>
+<div class="h-1.5 w-32 bg-brand-gold mx-auto mt-6 mb-8"></div>
+<p class="text-brand-gold font-label font-bold uppercase tracking-widest text-sm reveal">Note: Card payments incur extra charges</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8 reveal">
+<!-- Service 1: Men's Haircut -->
+<div class="group relative bg-[#132316] p-10 h-80 overflow-hidden border border-brand-gold/5 transition-all hover:border-brand-gold/30">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-green/20 to-brand-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-5xl text-brand-gold">content_cut</span>
+<div>
+<h3 class="text-4xl font-headline text-brand-cream uppercase">Men's Haircut</h3>
+<p class="text-lg font-label font-bold uppercase tracking-[0.2em] text-brand-gold mt-2">£20.00</p>
+</div>
+</div>
+</div>
+<!-- Service 2: Cut & Shave -->
+<div class="group relative bg-[#132316] p-10 h-80 overflow-hidden border border-brand-gold/5 transition-all hover:border-brand-gold/30">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-green/20 to-brand-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-5xl text-brand-gold">straighten</span>
+<div>
+<h3 class="text-4xl font-headline text-brand-cream uppercase">Cut & Shave</h3>
+<p class="text-lg font-label font-bold uppercase tracking-[0.2em] text-brand-gold mt-2">£25.00</p>
+</div>
+</div>
+</div>
+<!-- Service 3: Shaping -->
+<div class="group relative bg-[#132316] p-10 h-80 overflow-hidden border border-brand-gold/5 transition-all hover:border-brand-gold/30">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-green/20 to-brand-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-5xl text-brand-gold">face</span>
+<div>
+<h3 class="text-4xl font-headline text-brand-cream uppercase">Shaping</h3>
+<p class="text-lg font-label font-bold uppercase tracking-[0.2em] text-brand-gold mt-2">£15.00</p>
+</div>
+</div>
+</div>
+<!-- Service 4: Kids Haircut -->
+<div class="group relative bg-[#132316] p-10 h-80 overflow-hidden border border-brand-gold/5 transition-all hover:border-brand-gold/30">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-green/20 to-brand-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-5xl text-brand-gold">child_care</span>
+<div>
+<h3 class="text-4xl font-headline text-brand-cream uppercase">Kids Haircut</h3>
+<p class="text-lg font-label font-bold uppercase tracking-[0.2em] text-brand-gold mt-2">£15.00</p>
+<p class="text-xs font-label uppercase text-brand-cream/40 tracking-widest mt-1">Under 16 Years</p>
+</div>
+</div>
+</div>
+<!-- Service 5: Women Hair Treatment -->
+<div class="group relative bg-[#132316] p-10 h-80 overflow-hidden border border-brand-gold/5 transition-all hover:border-brand-gold/30">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-green/20 to-brand-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-5xl text-brand-gold">spa</span>
+<div>
+<h3 class="text-4xl font-headline text-brand-cream uppercase">Women Treatment</h3>
+<p class="text-lg font-label font-bold uppercase tracking-[0.2em] text-brand-gold mt-2">£20.00</p>
+<p class="text-xs font-label uppercase text-brand-cream/40 tracking-widest mt-1">Nourish & Restore</p>
+</div>
+</div>
+</div>
+<!-- Service 6: Appointment Booking -->
+<div class="group relative bg-[#132316] p-10 h-80 overflow-hidden border border-brand-gold/5 transition-all hover:border-brand-gold/30">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-green/20 to-brand-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-5xl text-brand-gold">calendar_month</span>
+<div>
+<h3 class="text-4xl font-headline text-brand-cream uppercase">Appointment</h3>
+<p class="text-lg font-label font-bold uppercase tracking-[0.2em] text-brand-gold mt-2">£30.00</p>
+<p class="text-xs font-label uppercase text-brand-cream/40 tracking-widest mt-1">Priority Booking</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Product Showcase (In-Store Essentials) -->
+<section class="py-32 bg-[#0A120B] border-b border-brand-gold/10" id="products">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-20 reveal">
+<h2 class="text-7xl font-headline text-brand-cream uppercase tracking-tight">In-Store Essentials</h2>
+<div class="h-1.5 w-32 bg-brand-gold mt-6 mb-8"></div>
+<p class="text-2xl font-display italic text-brand-gold">Premium grooming products, available exclusively at our Hounslow shop.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 reveal mt-12">
+<!-- Product 1: Nivea Soft -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Nivea Soft" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044128-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Nivea Soft</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Hydration Cream</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 2: Mada Shea Citrus -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Mada Shea Citrus Butter" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044129-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Mada Shea Citrus</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Shea Butter Blend</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 3: Hair Building Fiber -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Hair Building Fiber" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044130-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">NV Beauty Fiber</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Hair Building Fiber</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 4: Club Brush -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Magic Club Brush" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044132-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Magic Club Brush</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Hard/Soft Bristles</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 5: Strengthplex Mask -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Strengthplex Mask" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044133-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Toni & Guy Mask</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Bond Repair</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 6: NV Beauty 25 -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="NV Beauty 25 Cologne" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044134-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">NV Beauty 25</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Signature Cologne</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 7: Walee Olive Oil -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Olive Oil Spray" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044136-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Walee Olive Oil</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Hair Spray</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 8: Locking Mist -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Locking Mist" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044137-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">NV Locking Mist</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Fiber Locking Mist</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 9: Twist Sponge -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Twist Sponge" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044138-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Twist Sponge</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Jumbo Double-Sided</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 10: Metal Pik -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Metal Pik" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044139-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Stella Metal Pik</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Premium Hair Pik</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 11: DAX Green & Gold -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="DAX Green and Gold" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044142-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">DAX Green & Gold</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Conditioner/Styling</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 12: DAX Neat Waves -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="DAX Neat Waves" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044143-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">DAX Neat Waves</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Wave Hair Dress</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 13: Sector Wet Look -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Sector Wet Look" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044144-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Sector Superwax</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Wet Look Finish</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 14: DAX Wave & Groom -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="DAX Wave and Groom" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044146-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">DAX Wave & Groom</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Strong Hold Wax</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 15: Wahl Senior -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Wahl Senior Cordless" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044148-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Wahl Senior</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Cordless Clipper</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 16: Sector Normal -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Sector Normal" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044149-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Sector Normal</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Professional Wax</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 17: Wahl Taper 2000 -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Wahl Taper 2000" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044152-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Wahl Taper 2000</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Corded Clipper</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 18: Wahl GroomEase -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Wahl GroomEase Set" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044153-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Wahl GroomEase</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Battery Trimmer Set</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 19: Nyxon Bump Control -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Nyxon Bump Control" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044154-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Nyxon Control</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Bump Treatment</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 20: Palmer's Cocoa Butter -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Palmer's Cocoa Butter" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044155-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Palmer's Cocoa</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Daily Moisturizer</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 21: Black Hair Color -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="NV Beauty Black Color" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044156-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Black Hair Color</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">NV Color Shampoo</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 22: Argan Oil Color -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="NV Argan Oil Color" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044157-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Argan Oil Color</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">NV Color Shampoo</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 23: Clairol Gloss Up -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Clairol Gloss Up" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044158-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Clairol Gloss</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Color Gloss Up</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 24: Restoria Cream -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Restoria Cream" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044164-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Restoria Cream</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Grey Reducing</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 25: L'Oreal Men Expert -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="L'Oreal Men Expert" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044165-removebg-preview.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">L'Oreal Expert</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">One-Twist Color</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 26: Newmax Darbee Blades -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Newmax Darbee Blades" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044182.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Newmax Darbee</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Professional Blades</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 27: Bigen Beard Colour -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Bigen Beard Colour" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044183.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Bigen Beard Color</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Dark Brown B103</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 28: Just For Men Ultra -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Just For Men Ultra" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044184.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Just For Men</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Ultra Hair Color</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 29: Wahl Clipper Guards -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Wahl Clipper Guards" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044185.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Wahl Guards</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Premium Guard Set</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 30: Sector Super Wax -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="Sector Super Wax" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044193.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">Sector Hairfruit</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Strong Super Wax</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 31: NV Beauty Gum Gel -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="NV Beauty Gum Gel" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044196.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">NV Gum Gel</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Ultra Hold Texture</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+<!-- Product 32: NV Beauty Red Aqua Wax -->
+<div class="product-card group bg-background/40 border border-brand-gold/10 p-6 flex flex-col items-center text-center transition-all hover:border-brand-gold/40 hover:bg-background/60">
+<div class="h-48 w-full mb-6 overflow-hidden">
+<img alt="NV Beauty Red Aqua Wax" class="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110" src="assets/products/1000044201.png"/>
+</div>
+<h3 class="text-xl font-headline text-brand-cream uppercase tracking-wider mb-2">NV Red Aqua Wax</h3>
+<span class="text-xs font-label font-bold uppercase tracking-widest text-brand-gold/60">Ultra Hold 150ml</span>
+<div class="mt-4 pt-4 border-t border-brand-gold/10 w-full">
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-brand-cream/30">In-Store Only</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Craft Gallery -->
+<section class="py-32 bg-background reveal" id="gallery">
+<div class="max-w-7xl mx-auto px-6 mb-16">
+<h2 class="text-6xl font-headline text-brand-cream uppercase">Our Craft.</h2>
+<p class="text-2xl font-display italic text-brand-gold">Hounslow's Finest Precision Cuts.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 overflow-hidden">
+<div class="h-[600px] overflow-hidden transition-all duration-700 relative group border border-brand-gold/10">
+<img alt="Precision Skin Fade" class="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-110" src="assets/cut-1.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<span class="text-brand-cream font-headline text-3xl">Signature Fade</span>
+</div>
+</div>
+<div class="h-[600px] overflow-hidden transition-all duration-700 relative group border border-brand-gold/10">
+<img alt="Artistic Hair Design" class="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-110" src="assets/cut-2.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<span class="text-brand-cream font-headline text-3xl">Artistic Lining</span>
+</div>
+</div>
+<div class="h-[600px] overflow-hidden transition-all duration-700 relative group border border-brand-gold/10">
+<img alt="Sharp Grooming" class="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-110" src="assets/cut-3.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<span class="text-brand-cream font-headline text-3xl">Classic Precision</span>
+</div>
+</div>
+<div class="h-[600px] overflow-hidden transition-all duration-700 relative group border border-brand-gold/10">
+<img alt="Pattern Design" class="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-110" src="assets/cut-4.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<span class="text-brand-cream font-headline text-3xl">Pattern Work</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-32 bg-[#101E12]" id="reviews">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center justify-between mb-20 gap-8 reveal">
+<h2 class="text-6xl font-headline text-brand-cream uppercase leading-none text-center md:text-left">Voice of the People</h2>
+<div class="flex items-center gap-4 bg-background/40 px-6 py-3 border border-brand-gold/20">
+<img alt="Google" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_o1h_KJLU3GcVemEcWg3caleHLRntrYgtp_RtjuEHkyober_fg6AZE93CZcQgXGLY3gyWxQ6ZhcaBBQuyZ3UUzGPa8GX7eb8GOIZzWPZe3M7Vt9CcoGza4ZmuBK5wQT9Ua9fFL-nNQoR3bRGxpTfRcNpMxEkPyYe1xDCnojH-Wk0rJpcmYAVBwRVPpJiOLSLS9h0lKfo-LGyz-ciduKCFK0siGFghenctbLEbiW4jfNn6PyAqgdYH5eRqQglTLj8jECCut7Y6rsho"/>
+<span class="text-brand-gold font-label font-bold text-xl uppercase tracking-widest">4.2/5 Rating</span>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8 reveal">
+<div class="bg-background p-10 space-y-6 border-t-4 border-primary-green relative">
+<div class="flex text-brand-gold gap-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-display italic text-2xl text-brand-cream/90 leading-relaxed">"He's a good barber. His name is Patrick I've been using his services for a fair number of years now, and would definitely recommend him to other people whole heartedly. Very friendly guy indeed. Give them a try."</p>
+<p class="font-label font-bold uppercase tracking-[0.2em] text-primary-green">— Sam Lockwood</p>
+</div>
+<div class="bg-background p-10 space-y-6 border-t-4 border-primary-green relative">
+<div class="flex text-brand-gold gap-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-display italic text-2xl text-brand-cream/90 leading-relaxed">"Best barbers deffo one of da best came thru and boss man in the middle Dwayne gave me a quick and efficient fresh trim my new barbers 👌"</p>
+<p class="font-label font-bold uppercase tracking-[0.2em] text-primary-green">— SNM</p>
+</div>
+<div class="bg-background p-10 space-y-6 border-t-4 border-primary-green relative">
+<div class="flex text-brand-gold gap-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-display italic text-2xl text-brand-cream/90 leading-relaxed">"Cultural hotspot of hounslow, everyone so friendly and top tier trims - always my go to spot for a quick fade/shape up"</p>
+<p class="font-label font-bold uppercase tracking-[0.2em] text-primary-green">— Qwcz</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-32" id="find-us">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+<div class="space-y-12 reveal">
+<h2 class="text-66xl font-headline text-brand-gold uppercase">Locate Us</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-6 group">
+<span class="material-symbols-outlined text-4xl text-primary-green group-hover:text-brand-gold transition-colors">location_on</span>
+<div>
+<p class="text-22xl font-headline text-brand-cream uppercase tracking-wider">The Shop</p>
+<p class="text-xl text-brand-cream/60">32 Kingsley Road, Hounslow, TW3 1NS, United Kingdom</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<span class="material-symbols-outlined text-4xl text-primary-green group-hover:text-brand-gold transition-colors">schedule</span>
+<div>
+<p class="text-22xl font-headline text-brand-cream uppercase tracking-wider">Opening Hours</p>
+<div class="text-xl text-brand-cream/60 grid grid-cols-2 gap-x-12 mt-2">
+<span class="font-label uppercase font-bold text-sm tracking-widest text-brand-gold/50">Mon - Sat:</span> <span>09:00 - 19:00</span>
+<span class="font-label uppercase font-bold text-sm tracking-widest text-brand-gold/50">Sunday:</span> <span>10:00 - 17:00</span>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-6 bg-brand-red/10 p-6 border-l-4 border-brand-red">
+<span class="material-symbols-outlined text-4xl text-brand-red">info</span>
+<div>
+<p class="text-22xl font-headline text-brand-cream uppercase tracking-wider">Walk-in Notice</p>
+<p class="text-xl text-brand-cream/80">We prioritize walk-ins. Come down any time and we'll get you looking fresh.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[500px] border border-brand-gold/10 overflow-hidden reveal">
+<iframe allowfullscreen="" class="h-full w-full" loading="lazy" src="https://www.google.com/maps?q=32+Kingsley+Road,+Hounslow+TW3+1NS&output=embed" style="border:0;"></iframe>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-40 bg-primary-green relative overflow-hidden">
+<div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_#D4A017_0%,_transparent_70%)]"></div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10 space-y-12 reveal">
+<h2 class="text-88xl md:text-[10rem] font-headline text-brand-cream leading-none uppercase tracking-tighter">Walk in.<br/>Walk out fresh.</h2>
+<p class="text-3xl font-display italic text-brand-gold">The chair is waiting for you.</p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a class="bg-brand-red text-brand-cream px-12 py-6 font-label font-bold text-3xl uppercase tracking-tighter hover:scale-105 active:scale-95 transition-all shadow-2xl" href="tel:02038599703">
+                    Call 020 3859 9703
+                </a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background w-full border-t-4 border-primary-green py-20">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-sm space-y-6">
+<h3 class="text-4xl font-black uppercase text-brand-cream font-headline tracking-tighter">Best Barbers</h3>
+<p class="text-brand-cream/60 font-body text-lg leading-relaxed">Hounslow's Cultural Vault. Traditional craftsmanship meets modern precision since 2012.</p>
+<div class="space-y-1">
+<p class="text-brand-cream font-label font-bold uppercase tracking-widest">32 Kingsley Road, Hounslow, TW3 1NS</p>
+<p class="text-brand-gold font-label font-bold uppercase tracking-widest text-xl">020 3859 9703</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-x-20 gap-y-4">
+<a class="text-brand-cream/70 hover:text-brand-gold font-label font-bold uppercase text-lg tracking-widest transition-all" href="#about">About</a>
+<a class="text-brand-cream/70 hover:text-brand-gold font-label font-bold uppercase text-lg tracking-widest transition-all" href="#services">Services</a>
+<a class="text-brand-cream/70 hover:text-brand-gold font-label font-bold uppercase text-lg tracking-widest transition-all" href="#products">Products</a>
+<a class="text-brand-cream/70 hover:text-brand-gold font-label font-bold uppercase text-lg tracking-widest transition-all" href="#reviews">Reviews</a>
+<a class="text-brand-cream/70 hover:text-brand-gold font-label font-bold uppercase text-lg tracking-widest transition-all" href="#find-us">Find Us</a>
+<a class="text-brand-cream/70 hover:text-brand-gold font-label font-bold uppercase text-lg tracking-widest transition-all col-span-2" href="#">Privacy Policy</a>
+</div>
+<div class="md:text-right space-y-8">
+<div class="flex md:justify-end gap-6">
+<span class="material-symbols-outlined text-3xl text-brand-gold">content_cut</span>
+<span class="material-symbols-outlined text-3xl text-brand-gold">chair</span>
+<span class="material-symbols-outlined text-3xl text-brand-gold">face</span>
+</div>
+<p class="text-brand-cream/40 font-label font-bold uppercase tracking-[0.2em] text-sm">
+                    © 2026 Best Barbers LTD.<br/>Hounslow's Cultural Vault.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body></html>
